@@ -204,7 +204,8 @@ void CAddWindow::Notify(TNotifyUI& msg)
 		return;
 	}
 	else if (msg.sType == TEXT("Zhua_LBU")) {
-		::ShowWindow(m_pOwner->GetPaintWindow(), SW_SHOWNORMAL);
+		COptionUI* COpt = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("ad_opth")));
+		if (COpt->IsSelected()) ::ShowWindow(m_pOwner->GetPaintWindow(), SW_SHOWNORMAL);
 		ReleaseCapture();
 		StopFlash();
 		return;

@@ -16,6 +16,15 @@ UILIB_RESOURCETYPE CZiboxWnd::GetResourceType() const { return UILIB_RESOURCE; }
 CDuiString CZiboxWnd::GetSkinFile() { return GetRes(IDR_MAIN); };
 CDuiString CZiboxWnd::GetSkinFolder() { return TEXT(""); }
 
+void CZiboxWnd::RegisterHotKey() {
+	Zi_SB_Add = GlobalAddAtom(TEXT("Zi_SB_Add"));
+	Zi_SB_Start = GlobalAddAtom(TEXT("Zi_SB_Start"));
+	Zi_SB_Stop = GlobalAddAtom(TEXT("Zi_SB_Stop"));
+	::RegisterHotKey(m_hWnd, Zi_SB_Add, MOD_CONTROL, VK_F9);
+	::RegisterHotKey(m_hWnd, Zi_SB_Start, MOD_CONTROL, VK_F10);
+	::RegisterHotKey(m_hWnd, Zi_SB_Stop, MOD_CONTROL, VK_F11);
+}
+
 void CZiboxWnd::Notify(TNotifyUI& msg)
 {
 	if (msg.sType == TEXT("click")) {
@@ -129,50 +138,54 @@ void CZiboxWnd::Notify(TNotifyUI& msg)
 	}
 }
 
-
-
 LRESULT CZiboxWnd::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (uMsg)
 	{
-		//case WM_LBUTTONDOWN:
-		//{
-			//
-			//CMenuWnd* pMenu = new CMenuWnd();
-			//break;
-		//}
-	case WM_NCRBUTTONUP:
-	{
-		POINT pt;
-		GetCursorPos(&pt);
-		HMENU sMenu = GetSystemMenu(m_hWnd, FALSE);
-		EnableMenuItem(sMenu, SC_MOVE, FALSE);
-		EnableMenuItem(sMenu, SC_MINIMIZE, FALSE);
-		EnableMenuItem(sMenu, SC_CLOSE, FALSE);
-
-		EnableMenuItem(sMenu, SC_RESTORE, TRUE);
-		EnableMenuItem(sMenu, SC_MAXIMIZE, 0);
-		EnableMenuItem(sMenu, SC_SIZE, TRUE);
-		//EnableMenuItem
-		switch (TrackPopupMenu(sMenu, TPM_RIGHTBUTTON | TPM_RETURNCMD, pt.x, pt.y, 0, m_hWnd, NULL))
-		{
-		case SC_CLOSE:
-			PostMessage(WM_SYSCOMMAND, SC_CLOSE, 0);
-			break;
-		case SC_MINIMIZE:
-			PostMessage(WM_SYSCOMMAND, SC_MINIMIZE, 0);
-			break;
-		case SC_MAXIMIZE:
-			PostMessage(WM_SYSCOMMAND, SC_MAXIMIZE, 0);
-			break;
-		case SC_MOVE:
-			PostMessage(WM_SYSCOMMAND, SC_MOVE, 0);
-			break;
-		default:
-			break;
+	case WM_HOTKEY:
+		if (wParam == Zi_SB_Start) {
+			int allitem = CListItem::GetAllItem();
+			if (allitem) {
+				PlaySound((LPCTSTR)IDR_START, GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC);
+				//PlaySound(TEXT("E:\\Users\\msg_dw\\Desktop\\Zibox\\Zibox\\Zibox\\res\\SOUND\\SB_StartSound.wav"), NULL, SND_ASYNC);
+				CListUI* sb_List = static_cast<CListUI*>(m_PaintManager.FindControl(TEXT("sb_list")));
+				while (allitem--) {
+					CListItem* item = static_cast<CListItem*>(sb_List->GetItemAt(allitem));
+					item->Stop(1);
+					item->Start();
+				}
+			}
+			else {
+				MessageBox(m_hWnd, TEXT("没有添加项！"), TEXT("错误"), MB_OK);
+			}
+		}
+		else if (wParam == Zi_SB_Stop) {
+			int allitem = CListItem::GetAllItem();
+			if (allitem) {
+				PlaySound((LPCTSTR)IDR_STOP, GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC);
+				CListUI* sb_List = static_cast<CListUI*>(m_PaintManager.FindControl(TEXT("sb_list")));
+				while (allitem--) {
+					CListItem* item = static_cast<CListItem*>(sb_List->GetItemAt(allitem));
+					item->Stop(1);
+				}
+			}
+			else {
+				MessageBox(m_hWnd, TEXT("没有添加项！"), TEXT("错误"), MB_OK);
+			}
+		}
+		else if (wParam == Zi_SB_Add) {
+			CAddWindow* AdWnd;
+			if (CAddWindow::IsInstance()) {
+				AdWnd = CAddWindow::GetInstance();
+				AdWnd->addWindow();
+			}
+			else {
+				AdWnd = new CAddWindow(UILIB_RESOURCE, GetRes(IDR_ADDW));
+				AdWnd->Init(&m_PaintManager);
+				AdWnd->ShowWindow(true);
+			}
 		}
 		break;
-	}
 	case WM_NOTIFYICON://托盘图标信息
 		switch (lParam)
 		{
@@ -191,6 +204,12 @@ LRESULT CZiboxWnd::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 		break;
 	case WM_SETTEXT:
 		m_PaintManager.FindControl(TEXT("title"))->SetText((LPCTSTR)lParam);
+		return __super::HandleMessage(uMsg, wParam, lParam);
+	case WM_DESTROY:
+		UnregisterHotKey(m_hWnd, Zi_SB_Start);
+		UnregisterHotKey(m_hWnd, Zi_SB_Stop);
+		GlobalDeleteAtom(Zi_SB_Start);
+		GlobalDeleteAtom(Zi_SB_Stop);
 		return __super::HandleMessage(uMsg, wParam, lParam);
 	default:
 		return __super::HandleMessage(uMsg, wParam, lParam);

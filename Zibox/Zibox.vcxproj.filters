@@ -25,6 +25,9 @@
     <Filter Include="资源文件\Res\CURSOR">
       <UniqueIdentifier>{7a0aea32-c032-4bea-bade-dcc68bfc73e0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\Res\Sound">
+      <UniqueIdentifier>{2c7b8c1e-afd2-4ba0-a590-c4c3b8809e10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="StdAfx.h">
@@ -109,6 +112,24 @@
     <Image Include="res\IMG\Btn_Stop.png">
       <Filter>资源文件\Res\IMG</Filter>
     </Image>
+    <Image Include="res\IMG\Button1.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Button2.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\CheckBox.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Combo.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Edit.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Zhua.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Zibox.cpp">
@@ -160,5 +181,19 @@
     <None Include="res\CURSOR\Zhua.cur">
       <Filter>资源文件\Res\CURSOR</Filter>
     </None>
+    <None Include="res\cursor\wave1.bin">
+      <Filter>资源文件\Res\Sound</Filter>
+    </None>
+    <None Include="res\cursor\wave2.bin">
+      <Filter>资源文件\Res\Sound</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\SOUND\SB_StartSound.wav">
+      <Filter>资源文件\Res\Sound</Filter>
+    </Media>
+    <Media Include="res\SOUND\SB_StopSound.wav">
+      <Filter>资源文件\Res\Sound</Filter>
+    </Media>
   </ItemGroup>
 </Project>

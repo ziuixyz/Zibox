@@ -185,6 +185,11 @@
     <Image Include="res\IMG\Btn_Del.png" />
     <Image Include="res\IMG\Btn_Play.png" />
     <Image Include="res\IMG\Btn_Stop.png" />
+    <Image Include="res\IMG\Button1.png" />
+    <Image Include="res\IMG\Button2.png" />
+    <Image Include="res\IMG\CheckBox.png" />
+    <Image Include="res\IMG\Combo.png" />
+    <Image Include="res\IMG\Edit.png" />
     <Image Include="res\IMG\Luc_1.png" />
     <Image Include="res\IMG\Luc_2.png" />
     <Image Include="res\IMG\Luc_3.png" />
@@ -196,6 +201,7 @@
     <Image Include="res\IMG\Sys_Close.png" />
     <Image Include="res\IMG\Sys_Menu.png" />
     <Image Include="res\IMG\Sys_Min.png" />
+    <Image Include="res\IMG\Zhua.png" />
     <Image Include="Zibox.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -217,7 +223,13 @@
     <Xml Include="res\XML\menu.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\cursor\wave1.bin" />
+    <None Include="res\cursor\wave2.bin" />
     <None Include="res\CURSOR\Zhua.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\SOUND\SB_StartSound.wav" />
+    <Media Include="res\SOUND\SB_StopSound.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
