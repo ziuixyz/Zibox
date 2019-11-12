@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="300,200" caption="0,0,0,30">
+  <Font id="0" name="微软雅黑" size="16" bold="true" />
+  <VerticalLayout bkcolor="#FF990828">
+    <!--标题栏-->
+    <HorizontalLayout height="30">
+      <HorizontalLayout width="30"/>
+      <Label name="title" text="输入" textcolor="#FFFFFFFF" align="center" font="0"/>
+      <HorizontalLayout width="30">
+        <Button name="closebtn" tooltip="关闭" normalimage="res='3001' restype='png' source='0,0,30,30'" hotimage="res='3001' restype='png' source='30,0,60,30'" pushedimage="res='3001' restype='png' source='60,0,90,30'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <!--客户区-->
+    <VerticalLayout>
+      <HorizontalLayout>
+        <Label text="" align="center"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="32" padding="30,0,30,0">
+        <!--这个 他妈的 输入框 默认背景是白色-->
+        <Edit name="InputText" bkcolor="0x00000000" normalimage="res='7002' restype='png' source='0,0,32,22' corner='3,3,3,3'" hotimage="res='7002' restype='png' source='32,0,64,22' corner='3,3,3,3'" focusedimage="res='7002' restype='png' source='64,0,96,22' corner='3,3,3,3'"/>
+      </HorizontalLayout>
+      <HorizontalLayout height="32" padding="40,30,40,30" childpadding="40">
+        <button name="closebtn" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
+        <button name="okbtn" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="900,450" caption="0,0,0,33" roundcorner="10,10">
+  <Font id="0" name="微软雅黑" size="16" bold="true" />
+  <Font id="1" name="微软雅黑" size="60" bold="true" />
+  <Font id="2" name="新宋" size="12" bold="true" />
+  <Default name="VScrollBar" value="width=&quot;0&quot;"/>
+  <VerticalLayout bkcolor="#FFD2506E">
+    <!--标题栏-->
+    <HorizontalLayout height="30">
+      <HorizontalLayout width="90"/>
+      <Label name="title" text="Zibox" textcolor="#FFFFFFFF" align="center" font="0"/>
+      <HorizontalLayout width="90">
+        <Button name="menubtn" tooltip="菜单" pos="0,0,30,30" normalimage="res='3003' restype='png' source='0,0,30,30'" hotimage="res='3003' restype='png' source='30,0,60,30'" pushedimage="res='3003' restype='png' source='60,0,90,30'"/>
+        <Button name="minbtn" tooltip="最小化" pos="0,0,30,30" normalimage="res='3002' restype='png' source='0,0,30,30'" hotimage="res='3002' restype='png' source='30,0,60,30'" pushedimage="res='3002' restype='png' source='60,0,90,30'"/>
+        <Button name="closebtn" tooltip="关闭" pos="0,0,30,30" normalimage="res='3001' restype='png' source='0,0,30,30'" hotimage="res='3001' restype='png' source='30,0,60,30'" pushedimage="res='3001' restype='png' source='60,0,90,30'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <!--客户区-->
+    <HorizontalLayout>
+      <!--功能区-->
+      <VerticalLayout width="200" bkimage="res='8848' restype='png'">
+        <Option name="opt1" tooltip="鼠标连点器" group="1" height="80" foreimage="res='4001' restype='png'" hotimage="res='8849' restype='png'" selectedimage="res='8850' restype='png'" selected="true"/>
+        <Option name="opt2" tooltip="键盘连点器" group="1" height="80" foreimage="res='4002' restype='png'" hotimage="res='8849' restype='png'" selectedimage="res='8850' restype='png'"/>
+        <Option name="opt3" tooltip="变速小精灵" group="1" height="80" foreimage="res='4003' restype='png'" hotimage="res='8849' restype='png'" selectedimage="res='8850' restype='png'"/>
+        <Option name="opt4" tooltip="制作人名单" group="1" height="80" foreimage="res='4004' restype='png'" hotimage="res='8849' restype='png'" selectedimage="res='8850' restype='png'"/>
+      </VerticalLayout>
+      <!--主界面-->
+      <VerticalLayout>
+        <TabLayout name="chunk">
+          <HorizontalLayout>
+            <List name="sb_list" vscrollbar="true" header="hidden" itembkimage="res='8851' restype='png' corner='15,15,15,15'"
+                  itemhotbkcolor="0x00000000" itemselectedbkcolor="0x00000000" menu="true"
+                  childpadding="5,5,5,5"/>
+            <Button name="addbtn" tooltip="添加" float="1,1,1,1" pos="-60,-60,-20,-20" normalimage="res='5001' restype='png' source='0,0,40,40'" hotimage="res='5001' restype='png' source='40,0,80,40'" pushedimage="res='5001' restype='png' source='80,0,120,40'"/>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Label text="敬请期待..." align="center" font="1" bkcolor="#FFAAFFFF"/>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Label text="敬请期待..." align="center" font="1" bkcolor="#FFFFAAFF"/>
+          </HorizontalLayout>
+          <HorizontalLayout>
+            <Label text="懒得写" textcolor="#FFFFFFAA" align="center" font="1" bkcolor="#FF021030"/>
+          </HorizontalLayout>
+        </TabLayout>
+      </VerticalLayout>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>

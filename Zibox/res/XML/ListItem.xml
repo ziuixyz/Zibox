@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window>
+  <HorizontalLayout>
+    <VerticalLayout width="10"/>
+    <VerticalLayout>
+      <HorizontalLayout childpadding="20">
+        <Label name="sb_title" text="标题:" endellipsis="true"/>
+        <Label name="sb_pl" text="频率:"/>
+        <Label name="sb_cs" text="次数:"/>
+        <Combo name="sb_lor">
+          <ListLabelElement text="左键" selected="true"/>
+          <ListLabelElement text="右键"/>
+        </Combo>
+      </HorizontalLayout>
+      <HorizontalLayout childpadding="20">
+        <button name="hidewnd" text="隐藏窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <button name="showwnd" text="显示窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <button name="xgtitle" text="更改标题" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <button name="xgconfig" text="修改配置" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Button name="sb_start" width="40" padding="10,15,10,15" tooltip="启动/停止" normalimage="res='5002' restype='png' source='0,0,50,50'" hotimage="res='5002' restype='png' source='50,0,100,50'" pushedimage="res='5002' restype='png' source='100,0,150,50'"/>
+    <Button name="sb_stop" width="40" padding="10,15,10,15" tooltip="启动/停止" normalimage="res='5003' restype='png' source='0,0,50,50'" hotimage="res='5003' restype='png' source='50,0,100,50'" pushedimage="res='5003' restype='png' source='100,0,150,50'" disabledimage="res='5003' restype='png' source='150,0,200,50'" visible="false"/>
+    <Button name="del_btn" tooltip="删除" normalimage="res='5004' restype='png' source='0,0,50,50'" hotimage="res='5004' restype='png' source='50,0,100,50'" pushedimage="res='5004' restype='png' source='100,0,150,50'" width="40" padding="10,15,10,15"/>
+  </HorizontalLayout>
+</Window>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window size="400,300" caption="0,0,0,30">
+  <Font id="0" name="微软雅黑" size="16" bold="true" />
+    <VerticalLayout bkcolor="#FF888888">
+    <!--标题栏-->
+    <HorizontalLayout height="30">
+      <HorizontalLayout width="30"/>
+      <Label name="title" text="添加" textcolor="#FFFFFFFF" align="center" font="0"/>
+      <HorizontalLayout width="30">
+        <Button name="closebtn" tooltip="关闭" normalimage="res='3001' restype='png' source='0,0,30,30'" hotimage="res='3001' restype='png' source='30,0,60,30'" pushedimage="res='3001' restype='png' source='60,0,90,30'"/>
+      </HorizontalLayout>
+    </HorizontalLayout>
+    <!--客户区-->
+    <VerticalLayout>
+      <VerticalLayout height="64" padding="20,20,20,0" childpadding="10">
+        <HorizontalLayout pos="0,0,240,32" padding="60,0,60,0">
+          <Label text="窗口捕获工具: " width="80"/>
+          <Zhua name="ad_zhua" tooltip="抓抓" padding="10,0,10,0" pos="0,0,32,32" defimage="res='985' restype='png' source='0,0,32,32'" zhuaimage="res='6001' restype='png' source='0,0,90,32' corner='2,2,2,2'"/>
+          <Option name="ad_opth" padding="9,9,9,9" align="right" text="是否隐藏自己" tooltip="是否隐藏自己" pos="0,0,90,14" normalimage="res='7001' restype='png' source='0,0,14,14' corner='14,0,0,0'" hotimage="res='7001' restype='png' source='14,0,28,14' corner='14,0,0,0'" selectedimage="res='7001' restype='png' source='56,0,70,14' corner='14,0,0,0'"/>
+        </HorizontalLayout>
+        <HorizontalLayout height="22" padding="20,0,20,0">
+          <Label text="标题: " width="35"/>
+          <Label name="ad_htitle" text="NULL"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <HorizontalLayout height="86" padding="20,10,20,0">
+        <VerticalLayout childpadding="10" padding="20,0,20,0">
+          <HorizontalLayout height="22">
+            <Label text="句柄: " width="35"/>
+            <Label name="ad_handle" text="0x00000000"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="22">
+            <Label text="x: " width="20"/><Edit text="0" name="ad_ptx" maxchar="5" width="40"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="22">
+            <Label text="y: " width="20"/><Edit text="0" name="ad_pty" maxchar="5" width="40"/>
+          </HorizontalLayout>
+        </VerticalLayout>
+        <VerticalLayout childpadding="10" padding="20,0,20,0">
+          <HorizontalLayout height="22">
+            <Label width="60" text="频率(ms): "/>
+            <Edit text="0" name="ad_pl" maxchar="9" width="65"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="22">
+            <Label width="35" text="次数: "/><Edit text="0" name="ad_cs" maxchar="7" width="50"/>
+          </HorizontalLayout>
+          <HorizontalLayout height="22">
+            <Label width="35" text="鼠标: "/>
+            <Combo name="ad_lor" itemtextpadding="5" width="65" bkcolor="#FFFFFFFF" normalimage="res='7003' restype='png' source='0,0,19,19' corner='0,0,19,0'" hotimage="res='7003' restype='png' source='19,0,38,19' corner='0,0,19,0'" pushedimage="res='7003' restype='png' source='38,0,57,19' corner='0,0,19,0'">
+              <ListLabelElement text="左键" selected="true"/>
+              <ListLabelElement text="右键"/>
+            </Combo>
+          </HorizontalLayout>
+        </VerticalLayout>
+      </HorizontalLayout>
+      <HorizontalLayout padding="20,10,20,20">
+        <button name="closebtn" padding="60,14,30,14" pos="0,0,90,32" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
+        <button name="ad_okbtn" padding="30,14,60,14" pos="0,0,90,32" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这边就不注释了-->
+<Window size="92,72" bktrans="true" alpha="20">
+<VerticalLayout bkcolor="#FF2E2E2E">
+  <!--这边是一个列表控件和列表项 也不一定要用这个 列表控件嘛 是吧 
+  你随意改 但是换了其它控件可能响应不了 不重要 你随便改-->
+	<List header="hidden" inset="1,3,1,3" itemtextcolor="#FFC8C6CB" 
+		itemselectedtextcolor="#FFC8C6CB" itemhottextcolor="#FFC8C6CB"
+		itembkcolor="#FF2E2E2E" itemselectedbkcolor="#FF191919" itemhotbkcolor="#FF191919" >
+		<ListContainerElement name="im_start" height="22" inset="15,0,25,0">
+			<Label text="全部开始" textcolor="#FFC8C6CB" />
+		</ListContainerElement>
+		<ListContainerElement name="im_stop" height="22" inset="15,0,25,0">
+			<Label text="全部停止" textcolor="#FFC8C6CB" />
+		</ListContainerElement>
+		<ListContainerElement name="im_remove" height="22" inset="15,0,25,0" >
+			<Label text="全部删除"  textcolor="#FFC8C6CB" />
+		</ListContainerElement>
+	</List>
+</VerticalLayout>
+</Window>

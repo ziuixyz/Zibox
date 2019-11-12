@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="资源文件\Res">
+      <UniqueIdentifier>{5699f114-8f8b-4a2c-b6c9-728e80d4bfa7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Res\XML">
+      <UniqueIdentifier>{4ef5ac04-97d8-43a3-ba32-5e9283bd86f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Res\IMG">
+      <UniqueIdentifier>{f6888a59-8405-4e55-9f52-1e95a6eab6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件\Res\CURSOR">
+      <UniqueIdentifier>{7a0aea32-c032-4bea-bade-dcc68bfc73e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Zibox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NotifyIcon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AddWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Zhua.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ListItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InputWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Zibox.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Zibox.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\IMG\Btn_Add.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Luc_1.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Luc_2.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Luc_3.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Opt_1.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Opt_2.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Opt_3.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Opt_4.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Shadow.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Sys_Close.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Sys_Menu.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Sys_Min.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Btn_Play.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Btn_Del.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+    <Image Include="res\IMG\Btn_Stop.png">
+      <Filter>资源文件\Res\IMG</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Zibox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NotifyIcon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AddWindow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Zhua.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ListItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InputWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\XML\main.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\menu.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\AddWindow.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\ListItem.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\ItemMenu.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\InputWnd.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\CURSOR\Zhua.cur">
+      <Filter>资源文件\Res\CURSOR</Filter>
+    </None>
+  </ItemGroup>
+</Project>
