@@ -3,8 +3,6 @@
 
 CDuiString InputText;
 
-CInputWnd::~CInputWnd() {}
-
 CDuiString CInputWnd::InputWnd(HWND hWnd, CDuiString initText)
 {
 	InputText.Empty();

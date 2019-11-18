@@ -14,6 +14,7 @@ public:
 	virtual CDuiString GetSkinFile();
 	virtual CDuiString GetSkinFolder();
 	//void InitWindow();
+	void LoadConfig();
 	void RegisterHotKey();
 	virtual LRESULT MessageHandler(UINT uMsg, WPARAM wParam, LPARAM /*lParam*/, bool& /*bHandled*/) { return 0; };
 

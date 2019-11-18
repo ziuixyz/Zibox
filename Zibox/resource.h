@@ -3,8 +3,12 @@
 // π© Zibox.rc  π”√
 //
 #define IDI_MAINICON                    101
+#define IDD_ABOUT                       111
 #define IDC_ZHUA                        211
 #define IDM_ZHUA                        985
+#define IDR_SET                         1000
+#define IDR_HOTK                        1001
+#define IDC_LGITHUB                     1004
 #define IDM_SYSC                        3001
 #define IDM_SYSN                        3002
 #define IDM_SYSM                        3003
@@ -38,9 +42,9 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        108
+#define _APS_NEXT_RESOURCE_VALUE        118
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1001
+#define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

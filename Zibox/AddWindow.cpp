@@ -16,11 +16,6 @@ CAddWindow::CAddWindow(UILIB_RESOURCETYPE ResType, LPCTSTR XMLName) :
 
 CAddWindow::~CAddWindow() { m_pInstance = NULL; }
 
-bool CAddWindow::IsInstance() {
-	if (m_pInstance == NULL) return false;
-	else true;
-}
-
 CAddWindow* CAddWindow::GetInstance() { return m_pInstance; }
 
 LPCTSTR CAddWindow::GetWindowClassName() const { return TEXT("ZI_uiAW"); }
@@ -200,7 +195,7 @@ void CAddWindow::Notify(TNotifyUI& msg)
 		COptionUI* COpt = static_cast<COptionUI*>(m_PaintManager.FindControl(TEXT("ad_opth")));
 		if (COpt->IsSelected()) ::ShowWindow(m_pOwner->GetPaintWindow(),SW_MINIMIZE);
 		SetCapture(m_hWnd);
-		SetCursor(LoadCursor(m_hInstance, MAKEINTRESOURCE(IDC_ZHUA)));
+		SetCursor(LoadCursor(GetModuleHandle(NULL), MAKEINTRESOURCE(IDC_ZHUA)));
 		return;
 	}
 	else if (msg.sType == TEXT("Zhua_LBU")) {
@@ -247,9 +242,6 @@ LRESULT CAddWindow::HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (uMsg)
 	{
-	case WM_CREATE:
-		m_hInstance = ((LPCREATESTRUCT)lParam)->hInstance;
-		return __super::HandleMessage(uMsg, wParam, lParam);
 	case WM_SETTEXT:
 		m_PaintManager.FindControl(TEXT("title"))->SetText((LPCTSTR)lParam);
 		return __super::HandleMessage(uMsg, wParam, lParam);

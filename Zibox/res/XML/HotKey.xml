@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Window>
+  <HorizontalLayout>
+    <Label name="name" align="right" width="60"/>
+    <Combo name="mod" bkcolor="#FFF1F1F1" itemtextpadding="5" width="120" normalimage="res='7003' restype='png' source='0,0,19,19' corner='0,0,19,0'" hotimage="res='7003' restype='png' source='19,0,38,19' corner='0,0,19,0'" pushedimage="res='7003' restype='png' source='38,0,57,19' corner='0,0,19,0'">
+      <ListLabelElement text="无"/>
+      <ListLabelElement text="Ctrl"/>
+      <ListLabelElement text="Shift"/>
+      <ListLabelElement text="Alt"/>
+      <ListLabelElement text="Ctrl+Shift"/>
+      <ListLabelElement text="Ctrl+Alt"/>
+      <ListLabelElement text="Ctrl+Shift+Alt"/>
+    </Combo>
+    <Label text="+" align="center" width="20"/>
+    <Combo name="vk" bkcolor="#FFF1F1F1" itemtextpadding="5" width="50" normalimage="res='7003' restype='png' source='0,0,19,19' corner='0,0,19,0'" hotimage="res='7003' restype='png' source='19,0,38,19' corner='0,0,19,0'" pushedimage="res='7003' restype='png' source='38,0,57,19' corner='0,0,19,0'">
+      <ListLabelElement text="F1"/>
+      <ListLabelElement text="F2"/>
+      <ListLabelElement text="F3"/>
+      <ListLabelElement text="F4"/>
+      <ListLabelElement text="F5"/>
+      <ListLabelElement text="F6"/>
+      <ListLabelElement text="F7"/>
+      <ListLabelElement text="F8"/>
+      <ListLabelElement text="F9"/>
+      <ListLabelElement text="F10"/>
+      <ListLabelElement text="F11"/>
+      <ListLabelElement text="F12"/>
+    </Combo>
+  </HorizontalLayout>
+</Window>

@@ -14,10 +14,10 @@
         </Combo>
       </HorizontalLayout>
       <HorizontalLayout childpadding="20">
-        <button name="hidewnd" text="隐藏窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
-        <button name="showwnd" text="显示窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
-        <button name="xgtitle" text="更改标题" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
-        <button name="xgconfig" text="修改配置" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <Button name="hidewnd" text="隐藏窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <Button name="showwnd" text="显示窗口" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <Button name="xgtitle" text="更改标题" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
+        <Button name="xgconfig" text="修改配置" font="2" padding="0,0,10,5" textcolor="#FFFFFFFF" bkimage="res='8848' restype='png'" hotimage="res='8849' restype='png'" pushedimage="res='8850' restype='png'"/>
       </HorizontalLayout>
     </VerticalLayout>
     <Button name="sb_start" width="40" padding="10,15,10,15" tooltip="启动/停止" normalimage="res='5002' restype='png' source='0,0,50,50'" hotimage="res='5002' restype='png' source='50,0,100,50'" pushedimage="res='5002' restype='png' source='100,0,150,50'"/>

@@ -26,7 +26,7 @@ int APIENTRY _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPTSTR lpCm
 	CNotifyIcon* Nin = new CNotifyIcon(hInstance, Zibox.GetHWND());
 	Nin->Create();
 	Zibox.SetNin(Nin);
-	Zibox.RegisterHotKey();
+	Zibox.LoadConfig();
 	Zibox.ShowModal();
 	Nin->Destroy();
 	return 0;

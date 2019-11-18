@@ -2,7 +2,6 @@
 #include "Menu.h"
 
 CMenuWnd::CMenuWnd(UILIB_RESOURCETYPE ResType, LPCTSTR XMLName) : pszResType(ResType), pszXMLName(XMLName) {}
-CMenuWnd::~CMenuWnd() {}
 LPCTSTR CMenuWnd::GetWindowClassName() const { return TEXT("ZI_uimenu"); }
 UILIB_RESOURCETYPE CMenuWnd::GetResourceType() const { return pszResType; }
 CDuiString CMenuWnd::GetSkinFile() { return pszXMLName; }
@@ -55,7 +54,10 @@ void CMenuWnd::Notify(TNotifyUI& msg)
 			SetForegroundWindow(m_hWndParent);
 		}
 		else if (msn == TEXT("menu_about")) {
-			m_pOwnerPM->SendNotify(NULL, TEXT("menu_about"), 0, 0, true);
+			m_pOwnerPM->SendNotify(NULL, msn, 0, 0, true);
+		}
+		else if (msn == TEXT("menu_setting")) {
+			m_pOwnerPM->SendNotify(NULL, msn, 0, 0, true);
 		}
 		else if (msn == TEXT("im_start") || msn == TEXT("im_stop") || msn == TEXT("im_remove")) { 
 			CControlUI* sb_List = m_pOwnerPM->FindControl(TEXT("sb_list"));

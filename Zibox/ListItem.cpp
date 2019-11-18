@@ -76,7 +76,7 @@ int CListItem::GetAllItem() {
 	//CDuiString str;
 	//str.Format(TEXT("%d"),allhWnd.size());
 	//MessageBox(NULL, str, TEXT("1"), MB_OK);
-	return allhWnd.size();
+	return (int)allhWnd.size();
 }
 
 void CListItem::RemoveAllHwnd() {
@@ -213,7 +213,7 @@ bool CListItem::HandleNotify(void* param)
 		else if (msg->pSender == xgConfig) {
 			//CAddWindow* xgWindow = new CAddWindow(UILIB_RESOURCE, TEXT("10010"));
 			CAddWindow* xgWindow;
-			if (CAddWindow::IsInstance()) {
+			if (CAddWindow::GetInstance()) {
 				xgWindow = CAddWindow::GetInstance();
 				xgWindow->xgWindow(this, m_dhWnd, m_dPt, m_dpl, m_dcs, m_dlor);
 			}

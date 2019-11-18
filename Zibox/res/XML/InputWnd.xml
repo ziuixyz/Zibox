@@ -21,8 +21,8 @@
         <Edit name="InputText" bkcolor="0x00000000" normalimage="res='7002' restype='png' source='0,0,32,22' corner='3,3,3,3'" hotimage="res='7002' restype='png' source='32,0,64,22' corner='3,3,3,3'" focusedimage="res='7002' restype='png' source='64,0,96,22' corner='3,3,3,3'"/>
       </HorizontalLayout>
       <HorizontalLayout height="32" padding="40,30,40,30" childpadding="40">
-        <button name="closebtn" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
-        <button name="okbtn" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
+        <Button name="closebtn" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
+        <Button name="okbtn" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
       </HorizontalLayout>
     </VerticalLayout>
   </VerticalLayout>

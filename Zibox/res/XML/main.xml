@@ -4,7 +4,7 @@
   <Font id="0" name="微软雅黑" size="16" bold="true" />
   <Font id="1" name="微软雅黑" size="60" bold="true" />
   <Font id="2" name="新宋" size="12" bold="true" />
-  <Default name="VScrollBar" value="width=&quot;0&quot;"/>
+  <Default shared="true" name="VScrollBar" value="width=&quot;0&quot;"/>
   <VerticalLayout bkcolor="#FFD2506E">
     <!--标题栏-->
     <HorizontalLayout height="30">

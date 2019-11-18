@@ -1,9 +1,6 @@
 #pragma once
 class CInputWnd : public WindowImplBase
 {
-private:
-	virtual ~CInputWnd();
-
 public:
 	static CDuiString InputWnd(HWND hWnd, CDuiString initText);
 

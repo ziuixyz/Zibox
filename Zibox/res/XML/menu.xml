@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--这边就不注释了-->
-<Window size="92,72" bktrans="true" alpha="20">
+<Window size="92,96" bktrans="true" alpha="20">
 <VerticalLayout bkcolor="#FF2E2E2E">
   <!--这边是一个列表控件和列表项 也不一定要用这个 列表控件嘛 是吧 
   你随意改 但是换了其它控件可能响应不了 不重要 你随便改-->
@@ -13,6 +13,9 @@
 		<ListContainerElement name="menu_show" height="22" inset="15,0,25,0">
 			<Label text="显示" textcolor="#FFC8C6CB" />
 		</ListContainerElement>
+    <ListContainerElement name="menu_setting" height="22" inset="15,0,25,0" >
+      <Label text="设置"  textcolor="#FFC8C6CB" />
+    </ListContainerElement>
 		<ListContainerElement name="menu_close" height="22" inset="15,0,25,0" >
 			<Label text="退出"  textcolor="#FFC8C6CB" />
 		</ListContainerElement>

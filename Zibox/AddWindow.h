@@ -10,8 +10,6 @@ protected:
 	virtual ~CAddWindow();
 
 public:
-
-	static bool IsInstance();
 	static CAddWindow* GetInstance();
 
 	virtual LPCTSTR    GetWindowClassName() const;
@@ -38,7 +36,6 @@ private:
 	CPaintManagerUI* m_pOwner;
 	CWndShadow* m_WndShadow;
 	CListItem* m_xgItem;
-	HINSTANCE m_hInstance;
 	HWND m_HighlightHwnd;
 	HWND m_LastHwnd;
 	int m_Scale;

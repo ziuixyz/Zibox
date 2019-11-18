@@ -55,8 +55,8 @@
         </VerticalLayout>
       </HorizontalLayout>
       <HorizontalLayout padding="20,10,20,20">
-        <button name="closebtn" padding="60,14,30,14" pos="0,0,90,32" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
-        <button name="ad_okbtn" padding="30,14,60,14" pos="0,0,90,32" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
+        <Button name="closebtn" padding="60,14,30,14" pos="0,0,90,32" text="取消" tooltip="取消" normalimage="res='6001' restype='png' source='0,0,90,32'" hotimage="res='6001' restype='png' source='90,0,180,32'" pushedimage="res='6001' restype='png' source='180,0,270,32'"/>
+        <Button name="ad_okbtn" padding="30,14,60,14" pos="0,0,90,32" text="确定" tooltip="确定" normalimage="res='6002' restype='png' source='0,0,90,32'" hotimage="res='6002' restype='png' source='90,0,180,32'" pushedimage="res='6002' restype='png' source='180,0,270,32'"/>
       </HorizontalLayout>
     </VerticalLayout>
   </VerticalLayout>

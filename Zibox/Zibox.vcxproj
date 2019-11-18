@@ -99,6 +99,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(SolutionDir)Duilib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -116,6 +117,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Duilib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -135,6 +137,7 @@
       <ConformanceMode>true</ConformanceMode>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <AdditionalIncludeDirectories>$(SolutionDir)Duilib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -156,6 +159,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(SolutionDir)Duilib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -168,6 +172,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AddWindow.h" />
+    <ClInclude Include="ConfigFile.h" />
+    <ClInclude Include="SettingWnd.h" />
     <ClInclude Include="InputWnd.h" />
     <ClInclude Include="ListItem.h" />
     <ClInclude Include="Menu.h" />
@@ -206,6 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AddWindow.cpp" />
+    <ClCompile Include="ConfigFile.cpp" />
+    <ClCompile Include="SettingWnd.cpp" />
     <ClCompile Include="InputWnd.cpp" />
     <ClCompile Include="ListItem.cpp" />
     <ClCompile Include="main.cpp" />
@@ -216,16 +224,18 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="res\XML\AddWindow.xml" />
+    <Xml Include="res\XML\HotKey.xml" />
     <Xml Include="res\XML\InputWnd.xml" />
     <Xml Include="res\XML\ItemMenu.xml" />
     <Xml Include="res\XML\ListItem.xml" />
     <Xml Include="res\XML\main.xml" />
     <Xml Include="res\XML\menu.xml" />
+    <Xml Include="res\XML\SettingWnd.xml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\cursor\wave1.bin" />
-    <None Include="res\cursor\wave2.bin" />
     <None Include="res\CURSOR\Zhua.cur" />
+    <None Include="res\SOUND\SB_StartSound.bin" />
+    <None Include="res\SOUND\SB_StopSound.bin" />
   </ItemGroup>
   <ItemGroup>
     <Media Include="res\SOUND\SB_StartSound.wav" />

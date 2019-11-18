@@ -57,6 +57,12 @@
     <ClInclude Include="InputWnd.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="ConfigFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Zibox.rc">
@@ -156,6 +162,12 @@
     <ClCompile Include="InputWnd.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ConfigFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Xml Include="res\XML\main.xml">
@@ -176,15 +188,21 @@
     <Xml Include="res\XML\InputWnd.xml">
       <Filter>资源文件\Res\XML</Filter>
     </Xml>
+    <Xml Include="res\XML\SettingWnd.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
+    <Xml Include="res\XML\HotKey.xml">
+      <Filter>资源文件\Res\XML</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\CURSOR\Zhua.cur">
       <Filter>资源文件\Res\CURSOR</Filter>
     </None>
-    <None Include="res\cursor\wave1.bin">
+    <None Include="res\SOUND\SB_StartSound.bin">
       <Filter>资源文件\Res\Sound</Filter>
     </None>
-    <None Include="res\cursor\wave2.bin">
+    <None Include="res\SOUND\SB_StopSound.bin">
       <Filter>资源文件\Res\Sound</Filter>
     </None>
   </ItemGroup>
